@@ -42,6 +42,10 @@ p {
 	box-shadow: 0 0 10px red;
 }
 
+.dark-mode-toggle {
+    z-index: 1000; /* Ensure the button stays above other elements */
+  }
+
 .carousel-image {
     width: 100%;
     height: 100vh; /* vh stands for viewport height. This will make the image take the full height of the screen. */
@@ -49,6 +53,15 @@ p {
 }
 
 /* Navigation */
+@media (max-width: 576px) { /* This will apply the rules to screens that are 576px wide or less */
+    .navbar {
+      height: 100px; /* Adjust this value as needed */
+    }
+    body {
+        font-size: 18px; /* Adjust this value as needed */
+      }
+  }
+
 nav {
     background-color: #333;
     color: white;
