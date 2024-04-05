@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<!-- Add Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<i class="fa-2xl fa-solid fa-folder-open nav-img"></i>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="photos.html">Photos</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Quiz</a>
+					</li>
+				</ul>
+			</div>
+			 <!-- Dark Mode Toggle -->
+			 <div class="form-check form-switch">
+				<button class="btn btn-warning glow-on-hover" id="darkModeSwitch">Dark Mode</button>
+			</div>
+		</nav>
+	<div class="container">
+	<!-- Make a quiz here -->  
+	<div id="quiz-container">
+		<h1 id="question"></h1>
+		<form id="options">
+		  <!-- Options will be inserted here -->
+		</form>
+		<button id="submit" class="btn btn-warning glow-on-hover">Submit</button>
+	  </div>
+	<div id="result"></div>
+
+	<!-- Add Bootstrap JS and its dependencies -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/416664ebe7.js" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>

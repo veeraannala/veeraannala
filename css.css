@@ -1,0 +1,66 @@
+/* CSS Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.dark-mode {
+	background-color: #333;
+	color: lightgrey;
+}
+
+/* h1, h2 and h3 */
+h1, h2, h3 {
+	color: #333;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+	color: lightgrey;
+}
+
+p {
+	color: #666;
+}
+
+.dark-mode p {
+	color: #ccc;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.glow-on-hover {
+	transition: box-shadow .5s;
+}
+
+.glow-on-hover:hover {
+	box-shadow: 0 0 10px red;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100vh; /* vh stands for viewport height. This will make the image take the full height of the screen. */
+    object-fit: contain; /* This property is used to specify how an <img> or <video> should be resized to fit its container. */
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+.nav-img {
+    color: yellowgreen
+}
+
+/* Quiz */
+#quiz-container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
